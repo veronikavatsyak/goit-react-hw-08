@@ -1,0 +1,11 @@
+.menuBtn {
+  width: 64px;
+  height: 30px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
