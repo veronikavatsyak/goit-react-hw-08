@@ -43,18 +43,3 @@ export const addContact = createAsyncThunk(
     }
   }
 );
-
-export const editContact = createAsyncThunk(
-  "contacts/editContact",
-  async (id, thunkAPI) => {
-    try {
-      const { data } = await axios.post(
-        `hhttps://connections-api.goit.global/contacts/contacts/${id}`,
-        id
-      );
-      return data;
-    } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
-    }
-  }
-);
